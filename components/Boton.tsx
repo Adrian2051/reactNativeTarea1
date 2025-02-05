@@ -14,7 +14,7 @@ export const Boton = ({label, backgroundColor, width, onPress, link}:Props) => {
     const accion =(() => {
         if(onPress) onPress();
     });
-
+    return(
     <Pressable>
             <Link
                 style={[GlobalStyles.boton,
@@ -26,5 +26,6 @@ export const Boton = ({label, backgroundColor, width, onPress, link}:Props) => {
                 href={link}>{label}
             </Link>
     </Pressable>
+    );
 };
 export default Boton;

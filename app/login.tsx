@@ -6,10 +6,11 @@ import Boton from '@/components/Boton'
 const Login = () => {
   return (
     <View style={GlobalStyles.containerCentrado}>
-        <TextInput placeholder='Usuario'></TextInput>
-        <TextInput placeholder='Contrasenia'></TextInput>
+        <Text style= {GlobalStyles.titulo}>Login</Text>
+        <TextInput placeholder='Usuario' style={GlobalStyles.inp}></TextInput>
+        <TextInput placeholder='Contrasenia' style={GlobalStyles.inp} secureTextEntry={true}></TextInput>
         <Boton label='Acceder' backgroundColor='pink' width= {250} link='./tabs'></Boton>
-      <Text style= {GlobalStyles.titulo}>Login</Text>
+        <Boton label='Registrarse' backgroundColor='lightblue' width= {250} link='./tabs'></Boton>
     </View>
   )
 }

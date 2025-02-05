@@ -9,20 +9,34 @@ export const GlobalStyles = StyleSheet.create({
     },
 
     titulo: {
-        fontSize: 22
+        fontSize: 30,
+        textAlign: 'center',
     },
 
     boton: {
         borderRadius: 8,
         backgroundColor: Colors.black,
+        textAlign: 'center',
+        padding:10,
     },
-
     botonAzul: {
+        marginTop: 10,
         borderRadius: 8,
         backgroundColor: Colors.lightblue,
+        textAlign: 'center',
     },
     botonRosa: {
+        marginTop: 10,
         borderRadius: 8,
         backgroundColor: Colors.pink,
+        textAlign: 'center',
+    },
+    inp: {
+        marginTop: 10,
+        borderRadius: 8,
+        padding: 10,
+        backgroundColor: Colors.grey,
+        textAlign: 'center',
+        width: 250,
     }
 })
